@@ -1,3 +1,21 @@
+JSoup-Extract
+=============
+
+JSoup-extract is a fork from Jsoup by Jonathan Hendley. This fork is intendend to provide the additional features:
+
+* Template removal from multiple documents
+* Provide equals and hashcode for Elements
+
+## Template removal
+
+Jsoup-extract allows to remove the commons elements of multiple documents in order to retain only valuable information. 
+This allows to efficiently remove menus and template elements, while keeping the structural information that can be used for
+later extraction. If you aim at extracting the textual content of an HTML document, 
+use [https://github.com/kohlschutter/boilerpipe](boiilerpipe)
+
+Original Readme
+===============
+
 jsoup: Java HTML parser that makes sense of real-world HTML soup.
 
 jsoup is a Java library for working with real-world HTML. It provides a very convenient API for extracting and manipulating data, using the best of DOM, CSS, and jquery-like methods.
