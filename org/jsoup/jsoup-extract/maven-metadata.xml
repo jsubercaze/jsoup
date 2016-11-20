@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<metadata>
+  <groupId>org.jsoup</groupId>
+  <artifactId>jsoup-extract</artifactId>
+  <versioning>
+    <versions>
+      <version>1.9.3-SNAPSHOT</version>
+    </versions>
+    <lastUpdated>20161120191629</lastUpdated>
+  </versioning>
+</metadata>

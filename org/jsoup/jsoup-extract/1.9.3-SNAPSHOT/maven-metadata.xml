@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<metadata modelVersion="1.1.0">
+  <groupId>org.jsoup</groupId>
+  <artifactId>jsoup-extract</artifactId>
+  <version>1.9.3-SNAPSHOT</version>
+  <versioning>
+    <snapshot>
+      <timestamp>20161120.191629</timestamp>
+      <buildNumber>2</buildNumber>
+    </snapshot>
+    <lastUpdated>20161120191629</lastUpdated>
+    <snapshotVersions>
+      <snapshotVersion>
+        <extension>jar</extension>
+        <value>1.9.3-20161120.191629-2</value>
+        <updated>20161120191629</updated>
+      </snapshotVersion>
+      <snapshotVersion>
+        <extension>pom</extension>
+        <value>1.9.3-20161120.191629-2</value>
+        <updated>20161120191629</updated>
+      </snapshotVersion>
+      <snapshotVersion>
+        <classifier>javadoc</classifier>
+        <extension>jar</extension>
+        <value>1.9.3-20161120.191629-2</value>
+        <updated>20161120191629</updated>
+      </snapshotVersion>
+      <snapshotVersion>
+        <classifier>sources</classifier>
+        <extension>jar</extension>
+        <value>1.9.3-20161120.191629-2</value>
+        <updated>20161120191629</updated>
+      </snapshotVersion>
+    </snapshotVersions>
+  </versioning>
+</metadata>
