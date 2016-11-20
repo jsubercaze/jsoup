@@ -6,6 +6,31 @@ JSoup-extract is a fork from Jsoup by Jonathan Hendley. This fork is intendend t
 * Template removal from multiple documents
 * Provide equals and hashcode for Elements
 
+## Maven dependencies
+
+First you need to setup the server in your pom.xml :
+
+
+    <repositories>
+      <repository>
+        <id>inferray-mvn-repo</id>
+        <url>https://raw.github.com/jsubercaze/jsoup-extract/mvn-repo/</url>
+        <snapshots>
+            <enabled>true</enabled>
+            <updatePolicy>always</updatePolicy>
+        </snapshots>
+      </repository>
+    </repositories>
+
+Then use the following dependency :
+
+    <dependency>
+      <groupId>org.jsoup</groupId>
+      <artifactId>jsoup-extract</artifactId>
+      <version>1.9.3-SNAPSHOT</version>
+    </dependency>
+
+
 ## Template removal
 
 Jsoup-extract allows to remove the commons elements of multiple documents in order to retain only valuable information. 
