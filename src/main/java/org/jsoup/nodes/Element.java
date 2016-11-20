@@ -1,16 +1,5 @@
 package org.jsoup.nodes;
 
-import org.jsoup.helper.StringUtil;
-import org.jsoup.helper.Validate;
-import org.jsoup.parser.Parser;
-import org.jsoup.parser.Tag;
-import org.jsoup.select.Collector;
-import org.jsoup.select.Elements;
-import org.jsoup.select.Evaluator;
-import org.jsoup.select.NodeTraversor;
-import org.jsoup.select.NodeVisitor;
-import org.jsoup.select.Selector;
-
 import java.io.IOException;
 import java.util.ArrayList;
 import java.util.Arrays;
@@ -22,6 +11,17 @@ import java.util.Map;
 import java.util.Set;
 import java.util.regex.Pattern;
 import java.util.regex.PatternSyntaxException;
+
+import org.jsoup.helper.StringUtil;
+import org.jsoup.helper.Validate;
+import org.jsoup.parser.Parser;
+import org.jsoup.parser.Tag;
+import org.jsoup.select.Collector;
+import org.jsoup.select.Elements;
+import org.jsoup.select.Evaluator;
+import org.jsoup.select.NodeTraversor;
+import org.jsoup.select.NodeVisitor;
+import org.jsoup.select.Selector;
 
 /**
  * A HTML element consists of a tag name, attributes, and child nodes (including
@@ -37,7 +37,7 @@ public class Element extends Node {
 	/**
 	 * Internal number - for strict equality
 	 */
-	private int elementID = elementNumber++;
+	private final int elementID = elementNumber++;
 
 	private Tag tag;
 	/**
@@ -1437,6 +1437,10 @@ public class Element extends Node {
 		return appendable;
 	}
 
+	public int getElementID() {
+		return elementID;
+	}
+
 	/**
 	 * Set this element's inner HTML. Clears the existing HTML first.
 	 * 
@@ -1452,7 +1456,7 @@ public class Element extends Node {
 	}
 
 	public String toString() {
-		return outerHtml();
+		return this.outerHtml();
 	}
 
 	@Override
