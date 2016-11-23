@@ -43,7 +43,7 @@ public class Element extends Node {
 	/**
 	 * The depth of the element in the tree
 	 */
-	private int depth;
+	int depth;
 	/**
 	 * The internal semantic hash code
 	 */
@@ -1481,6 +1481,10 @@ public class Element extends Node {
 		if (elementID != other.elementID)
 			return false;
 		return true;
+	}
+
+	public int getDepth() {
+		return depth;
 	}
 
 }

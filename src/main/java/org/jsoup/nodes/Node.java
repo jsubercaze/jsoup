@@ -476,6 +476,11 @@ public abstract class Node implements Cloneable {
 		if (this.parentNode != null)
 			this.parentNode.removeChild(this);
 		this.parentNode = parentNode;
+		// Update the depth
+		if (this instanceof Element) {
+			Element elem = (Element) this;
+			elem.depth = elem.parents().size();
+		}
 	}
 
 	protected void replaceChild(Node out, Node in) {
