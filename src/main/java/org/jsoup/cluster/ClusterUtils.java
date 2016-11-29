@@ -4,7 +4,6 @@ import java.util.ArrayList;
 import java.util.Collections;
 import java.util.List;
 
-import org.jsoup.nodes.Element;
 import org.jsoup.nodes.Node;
 
 public class ClusterUtils {
@@ -26,7 +25,7 @@ public class ClusterUtils {
 		}
 	}
 
-	public static Node lCA(Node node1, Node node2) {
+	public static Node lowestCommonAncestor(Node node1, Node node2) {
 		List<Node> parents = getParents(node1);
 		List<Node> parents2 = getParents(node2);
 		// LCA
